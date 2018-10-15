@@ -36,13 +36,14 @@
 
 
 #container {
-    perspective: 25px;
+    perspective: 30px;
     margin: 10px;
+    text-align: center;
   }
   
 #inner {
-    width: 20em;
-    height: 18em;
+    width: 19em;
+    height: 19em;
     margin: 10px;
     background-color: white;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
@@ -55,13 +56,14 @@
 
 
 #container1 {
-    perspective: 25px;
+    perspective: 30px;
     margin: 10px;
+    text-align: center;
   }
   
 #inner1 {
-    width: 20em;
-    height: 18em;
+    width: 19em;
+    height: 19em;
     margin: 10px;
     background-color: white;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
@@ -75,13 +77,14 @@
 
 
 #container2 {
-    perspective: 25px;
+    perspective: 30px;
     margin: 10px;
+    text-align: center;
   }
   
 #inner2 {
-    width: 20em;
-    height: 18em;
+    width: 19em;
+    height: 19em;
     margin: 10px;
     background-color: white;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
@@ -94,13 +97,14 @@
 
 
 #container3 {
-    perspective: 25px;
+    perspective: 30px;
     margin: 10px;
+    text-align: center;
   }
   
 #inner3 {
-    width: 20em;
-    height: 18em;
+    width: 19em;
+    height: 19em;
     margin: 10px;
     background-color: white;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
