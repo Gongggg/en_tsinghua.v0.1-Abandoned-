@@ -10191,7 +10191,7 @@ article.pytorch-article img {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   html {
     font-size: 16px;
   }
@@ -10567,7 +10567,7 @@ article.pytorch-article .function table tbody tr th.field-name, article.pytorch-
   line-height: 1.75rem;
   color: #262626;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   article.pytorch-article .function table tbody tr th.field-name, article.pytorch-article .attribute table tbody tr th.field-name, article.pytorch-article .class table tbody tr th.field-name {
     padding-left: 7.5rem;
   }
@@ -10578,7 +10578,7 @@ article.pytorch-article .function table tbody tr td.field-body, article.pytorch-
   line-height: 1.75rem;
   color: #262626;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   article.pytorch-article .function table tbody tr td.field-body, article.pytorch-article .attribute table tbody tr td.field-body, article.pytorch-article .class table tbody tr td.field-body {
     padding-left: 1.25rem;
   }
@@ -10784,7 +10784,7 @@ article.pytorch-article .math .MathJax_Display {
     width: 73%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-breadcrumbs-wrapper {
     width: 698px;
   }
@@ -10882,7 +10882,7 @@ a:hover {
     width: 70%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-content-wrap {
     left: auto;
     margin-left: 480px;
@@ -10905,10 +10905,10 @@ a:hover {
 @media screen and (min-width: 1101px) {
   .pytorch-content-left {
     margin-top: 0;
-    width: 85%;
+    width: 100%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-content-left {
     width: 700px;
   }
@@ -10941,7 +10941,7 @@ a:hover {
     display: block;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-content-right {
     width: 350px;
     left: 0;
@@ -10969,7 +10969,7 @@ a:hover {
     padding-bottom: 5.625rem;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-menu-vertical {
     padding-right: 4.0625rem;
   }
@@ -10995,7 +10995,7 @@ a:hover {
     z-index: 200;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-left-menu {
     padding: 0 0 0 1.875rem;
     width: 420px;
@@ -11022,7 +11022,7 @@ a:hover {
     margin: 1.25rem 0 1.875rem 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-left-menu-search {
     margin: 2.5rem 0;
   }
@@ -11061,7 +11061,7 @@ a:hover {
     width: 120%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-left-menu .pytorch-side-scroll {
     width: 410px;
   }
@@ -11085,7 +11085,7 @@ a:hover {
     width: 17%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-right-menu {
     left: 1200px;
     width: 380px;
@@ -11296,7 +11296,7 @@ a:hover {
     width: 120%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-right-menu .pytorch-side-scroll {
     width: 440px;
   }
@@ -11322,7 +11322,7 @@ a:hover {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .header-container {
     margin-top: 0;
   }
@@ -11344,7 +11344,7 @@ a:hover {
     padding-left: 1.875rem;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .header-holder .container {
     padding-right: 3.75rem;
     padding-left: 3.75rem;
@@ -11365,7 +11365,7 @@ a:hover {
     padding-left: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .header-holder .main-menu {
     left: 380px;
   }
@@ -11397,10 +11397,10 @@ a:hover {
     width: 100%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-page-level-bar {
     left: 420px;
-    height: 90px;
+    height: 45px;
     padding-left: 60px;
     right: 0;
     width: 100%;
@@ -11419,7 +11419,7 @@ a:hover {
     left: 68%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2000px) {
   .pytorch-shortcuts-wrapper {
     left: 820px;
   }
