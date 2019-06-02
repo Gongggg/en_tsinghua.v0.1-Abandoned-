@@ -2,13 +2,12 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>tst<!-->
+<!--[if gt IE 8]>     <htnlkdasddd><!-->
 <html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
 
-  
   <meta charset="utf-8">
   <title>THU - Yue's Group</title>
   <meta name="description" content="">
@@ -78,17 +77,6 @@
   <!-- fancy select boxes -->
   <link href="../cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
   <script src="../cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
-
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?bee6e9034f83599f524d47d96877e93c";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
 </head>
 
 <body>
@@ -102,35 +90,12 @@
             <i class="glyphicons show_lines"></i>
           </a>
           <img class="navbar-brand navbar-left hidden-xs" src="static/img/logos/nlp-logo-small.png" alt="">
-          <a class="navbar-brand navbar-left" href="index.htm">
+          <a class="navbar-brand navbar-left" href="maintenance.htm">
             <h3 class="hidden-xs">Tsinghua University - Yue's Group</h3>
             <h3 class="hidden-sm hidden-md hidden-lg hidden-xl">THU - Yue's Group</h3>
           </a>
         </div>
 
-        <div class="navbar-collapse grove-nav collapse">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="index.htm">home</a>
-            </li>
-            <li>
-              <a href="people/index.htm">people</a>
-            </li>
-            <li>
-              <a href="resrc/index">research</a>
-            </li>
-            <li>
-              <a href="pubs/index.htm">publications</a>
-            </li>
-            <li>
-              <a href="blog/index.htm">news</a>
-            </li>
-            <li>
-              <a style="color:rgb(130, 49, 142)" href="../cn_tsinghua/index.htm"><b>中文</b></a>
-            </li>            
-
-          </ul>
-        </div>
         <!-- /.navbar-collapse -->
       </div>
     </nav>
@@ -144,7 +109,7 @@
 
       <div class="widewrapper pagetitle">
         <div class="container">
-          <h1>Welcome!</h1>
+          <h1>Website is Maintaining, please visit later!</h1>
         </div>
       </div>
 
@@ -152,9 +117,6 @@
       <div class="widewrapper weak-highlight">
         <div class="container content">
           <div id="showmarkdown" class="row">
-
-
-
 
             <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <h2>Tsinghua University - Yue's Group</h2>
@@ -184,15 +146,6 @@
                 </div>
               </div>
             </section>
-
-            <section id="latestnews" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <br>
-              <br>
-              <h1 align='center'>LATEST NEWS</h1>
-              <hr>
-
-            </section>
-
           </div>
         </div>
       </div>
@@ -224,60 +177,6 @@
             All Rights Reserved.
           </div>
         </div>
-
-        <!-- 
-        <div class="col-sm-3">
-          <div class="indent30">
-            <h4>Affiliated Groups</h4>
-            <ul class="grove-list">
-              <li>
-                <a href="https://www.google.com/">XXXXXXX</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/">XXXXX</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/">XX</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
-
-        <div class="col-sm-3">
-          <div class="indent30">
-            <h4>Connect</h4>
-            <ul class="grove-list">
-              <li>
-                <a href="https://www.google.com/">Github</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
-        <div class="col-sm-3">
-          <div class="indent30">
-            <h4>Local links</h4>
-            <div class="small" style="text-align:left">
-              <a href="https://www.google.com/">AI lunch</a> ·
-              <a href="https://www.google.com/">AI Reading Group</a>
-              <br>
-              <a href="https://www.google.com/">AI Seminar</a> ·
-              <a href="https://www.google.com/">Calendar</a>
-              <br>
-              <a href="https://www.google.com/">AI Speakers</a> ·
-              <a href="https://www.google.com/">Q&amp;A</a>
-            </div>
-          </div>
-
-
-        </div> -->
-
       </div>
     </div>
   </footer>
@@ -289,82 +188,6 @@
 
   <script>
     $('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
-  </script>
-
-  <script>
-    function mdjump(mdurl) {
-      var mddata = "#test";
-
-      // console.log("test2test2");
-
-      $.getJSON(mdurl, function (data, status) {
-        mddata = data.news_detail;
-        // console.log("testtest");
-        // console.log(mddata);
-      });
-
-      var converter = new showdown.Converter();
-      var html = converter.makeHtml(mddata);
-      $("#showmarkdown").empty();
-      $("#showmarkdown")[0].innerHTML = html;
-    }
-
-    $('document').ready(function () {
-      var jsondata = [
-
-        {
-          "title": "test",
-          "brief": "ttttt",
-          "author": "ttttttt",
-          "year": "2014",
-          "month": "07",
-          "day": "03",
-          "imgurl": "static/img/logos/nlp-logo-small.png,static/img/logos/nlp-logo-small.png,static/img/logos/nlp-logo-small.png",
-          "url": ""
-        },
-        {
-          "title": "test",
-          "brief": "ttttt",
-          "author": "ttttttt",
-          "year": "2014",
-          "month": "07",
-          "day": "03",
-          "imgurl": "static/img/logos/nlp-logo-small.png",
-          "url": ""
-        }
-      ];
-
-
-      $.ajaxSettings.async = false;
-      $.getJSON("latestnews.json", function (data, status) {
-        // */latestnews.json
-        jsondata = data;
-        // console.log("test3test3");
-
-      });
-
-
-
-
-      $.each(jsondata, function () {
-        $("#latestnews").append(
-          '<article class=\"blog-post\"><header><h4 class=\"title\"><a href=\"javascript:mdjump(\'' + this.url + '\')\">' +
-          this.title + '</a></h4></header><p>' + this.brief + '</p><div class="briefimg"></div><p>Posted on ' +
-          this.day + '/' + this.month + '/' + this.year + ' by ' + this.author +
-          '</p></article><hr>'
-        );
-        if (this.imgurl.length >= 1) {
-          $.each(this.imgurl.split(","), function () {
-            $("#latestnews div:last").append('<img style=" display:inline-block;" class="leadimage img-responsive" width="100" height="100" src=' + this + '> ');
-          });
-        }
-      });
-      $("#latestnews").append('<a href="blog/index.htm">MORE</a>');
-
-    });
-
-    egg = 'This websit project is designed and implemented by Biao Gong, Min Yang and Ziqiang Chen.';
-
   </script>
 
 </body>
