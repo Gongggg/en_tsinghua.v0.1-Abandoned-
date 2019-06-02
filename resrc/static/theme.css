@@ -3163,18 +3163,19 @@ tbody.collapse.show {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width: 11rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212529;
-  text-align: left;
+  text-align: center;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
 }
+
 
 .dropup .dropdown-menu {
   margin-top: 0;
@@ -9691,8 +9692,8 @@ pre {
 }
 
 .header-logo {
-  height: 30px;
-  width: 500px;
+  height: 40px;
+  width: 400px;
   background-image: url("../../static/img/logos/nlp-logo-small.png");
   background-repeat: no-repeat;
   background-size: 200px 30px;
@@ -9705,7 +9706,7 @@ pre {
     position: absolute;
     height: 30px;
     width: 300px;
-    top: 0px;
+    top: -10px;
     float: none;
   }
 }
@@ -9746,7 +9747,7 @@ pre {
 .header-holder .main-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -10090,7 +10091,7 @@ article.pytorch-article h6 {
   color: #262626;
 }
 article.pytorch-article h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 1.33px;
   line-height: 2rem;
   margin-top: 3.125rem;
@@ -10291,9 +10292,9 @@ ul.pytorch-breadcrumbs a {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 1.78px;
-  line-height: 2.5rem;
+  line-height: 5.5rem;
   text-transform: uppercase;
 }
 

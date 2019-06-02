@@ -10,6 +10,63 @@ body {
   color: #646464;
   background-color: #ffffff;
 }
+
+.navbar .nav>li .dropdown-menu {
+  margin-top: -12px;
+}
+
+.navbar .nav>li:hover .dropdown-menu {
+  display: block;
+  background-color: rgba(92, 48, 125, 0.93)
+}
+
+#language{
+  /* style="position:absolute;top:10px;right:10px;border:1.5px solid rgb(255, 255, 255);border-radius: 5px;padding-left: 10px;padding-right: 10px"> */
+  position:absolute;
+  top:10px;right:-4px;
+  border:1.5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+#imoonbignav{
+  background:#5c307d;
+  border-radius:0px;
+  margin-bottom: 0px;
+  /* height: 90px; */
+  padding-bottom: 10px;
+}
+#imoonmidnav{
+  margin-top:4px;
+}
+#imoonnav{
+  font-size: 16px;
+  margin-top: 30px;  
+}
+#imoonlogo{
+  padding-top: 14px;
+  width: 80px;
+  height: auto;
+}
+#imoontitle{
+  /* style="color:white;margin-top: 0px; font-size: 23px; margin-top: 16px" */
+  color:white;
+  margin-top: 0px; 
+  font-size: 23px; 
+  margin-top: 16px;
+}
+#imoontitle p{
+  /* style="font-size:17px;font-weight:lighter;margin-top: 4px" */
+  font-size:17px;
+  font-weight:lighter;
+  margin-top: 4px;
+}
+
+
+
+
 a {
   color: #7694a7;
 }
@@ -67,7 +124,7 @@ hr {
   color: #ffffff;
 }
 body {
-  padding-top: 14px;
+  padding-top: 0px;
   line-height: 23px;
 }
 .masthead {
@@ -86,8 +143,12 @@ body {
   -moz-box-shadow: inset 1px 3px 1px -2px #e2e1e1;
   box-shadow: inset 1px 3px 1px -2px #e2e1e1;
 }
+
+#drump {color:#ffffff}
+
 .widewrapper.pagetitle {
-  background-color: rgb(108, 23, 134);
+  background-color: #5c307d;
+  /* rgb(108, 23, 134); */
   -webkit-box-shadow: inset 1px 3px 1px -2px #620F0F;
   -moz-box-shadow: inset 1px 3px 1px -2px #620F0F;
   box-shadow: inset 0px 0px 2px 1px #620F0F;
@@ -342,7 +403,7 @@ footer .indent30 {
   background-color: transparent;
 }
 .grove-navbar .grove-nav .nav > li > a {
-  color: #939393;
+  color: #ffffff;
   padding: 0;
   text-shadow: none;
 }
@@ -403,7 +464,7 @@ footer .indent30 {
     margin-bottom: 0px;
   }
   .grove-navbar .navbar-header {
-    margin-bottom: 12px;
+    margin-bottom: 26px;
   }
   .grove-navbar .grove-nav .nav {
     float: none;
@@ -455,7 +516,7 @@ footer .indent30 {
     float: none;
     top: inherit;
     left: inherit;
-    margin: ;
+    /* margin: ; */
     background-color: transparent;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -829,7 +890,7 @@ div.showroom {
   padding-bottom: 30px;
 }
 div.showroom-controls {
-  background: url(../img/showroom-bg.png)/*tpa=https://nlp.stanford.edu/static/img/showroom-bg.png*/;
+  background: url(../img/showroom-bg.png);
   margin-bottom: 12px;
   height: 24px;
 }

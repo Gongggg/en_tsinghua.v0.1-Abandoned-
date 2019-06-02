@@ -9,7 +9,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>People - THU - Yue's Group</title>
+	<title>iMoon-Lab: People</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 
@@ -71,7 +71,8 @@
 	<script src="../../cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 
 	<!-- highlighting for tables -->
-	<script src="../../cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+	<script
+		src="../../cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
 	<script src="../../bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
 
 	<!-- fancy select boxes -->
@@ -93,39 +94,62 @@
 
 	<!-- navigation -->
 	<header>
-		<nav class="navbar navbar-default grove-navbar">
-			<div class="container">
+		<nav class="navbar navbar-default grove-navbar navbar-fixed-top" id="imoonbignav">
+			<div class="container" id="imoonmidnav">
 				<div class="navbar-header">
 					<a href="#" class="grove-toggle collapsed" data-toggle="collapse" data-target=".grove-nav">
 						<i class="glyphicons show_lines"></i>
 					</a>
-					<img class="navbar-brand navbar-left hidden-xs" src="../static/img/logos/nlp-logo-small.png" alt="">
+					<img class="navbar-brand navbar-left hidden-xs" src="../static/img/logos/nlp-logo-small.png" alt=""
+						id="imoonlogo">
 					<a class="navbar-brand navbar-left" href="../index.htm">
-						<h3 class="hidden-xs">Tsinghua University - Yue's Group</h3>
-						<h3 class="hidden-sm hidden-md hidden-lg hidden-xl">THU - Yue's Group</h3>
+						<h3 class="hidden-xs" id="imoontitle">智能媒体与认知实验室<p>
+								iMoon: Intelligent
+								Media and Cognition Lab</p>
+						</h3>
+						<h3 class="hidden-sm hidden-md hidden-lg hidden-xl" style="color: white">iMoon-Lab</h3>
 					</a>
 				</div>
 
-				<div class="navbar-collapse grove-nav collapse">
-					<ul class="nav navbar-nav">
+				<div class="navbar-collapse grove-nav collapse" style="position: relative">
+					<ul class="nav navbar-nav" id="imoonnav">
+
+						<div style="position:absolute;top:5px;left:10px;border:0px solid rgb(255, 255, 255);">
+							<a href="../index.htm">
+								<div style="width: 400px;height:65px"></div>
+							</a>
+						</div>
+            <div id="language">
+							<a id='drump' href="../../cn_tsinghua/people/index.htm"><b>中 / </b></a><a id='drump' href="#"><b>En</b></a>
+						</div>
+
 						<li>
-							<a href="../index.htm">home</a>
+							<a href="../index.htm">主页</a>
 						</li>
 						<li>
-							<a href="../people/index.htm">people</a>
+							<a href="../people/index.htm">团队</a>
 						</li>
 						<li>
-							<a href="../resrc/index">research</a>
+							<a href="../resrc/index.htm">研究方向</a>
 						</li>
 						<li>
-							<a href="../pubs/index.htm">publications</a>
+							<a href="../pubs/index.htm">论文</a>
 						</li>
 						<li>
-							<a href="../blog/index.htm">news</a>
+							<a href="../blog/index.htm">新闻</a>
 						</li>
-                        <li>
-                            <a style="color:rgb(130, 49, 142)" href="../../cn_tsinghua/people/index.htm"><b>中文</b></a>
-                        </li>						
+						<li>
+							<a href="#">生活</a>
+						</li>
+						<li class="dropdown">
+							<a href="#">更多信息</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">MICCAI19 Tutorial</a></li>
+								<li><a href="#">MICCAI19 挑战赛</a></li>
+							</ul>
+						</li>
+
+
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -135,45 +159,68 @@
 
 
 
-	<div class="widewrapper">
+	<div class="widewrapper" style="margin-top: 90px">
 		<div id="body_content">
 
-			<div class="widewrapper pagetitle">
+			<!-- <div class="widewrapper pagetitle">
 				<div class="container">
-					<h1>People</h1>
+					<h1>团队</h1>
 				</div>
-			</div>
+			</div> -->
 
 
-			<div class="widewrapper weak-highlight">
+			<div class="widewrapper">
 				<div class="container content">
 					<!--<div class="headline top">People</div>-->
 
 					<!--<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-right: 1px solid #ccc;">-->
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
-
-
-
-
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="showroom-controls">
-									<div class="links">Professors</div>
+									<div class="links">教授</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-6 team-member">
 										<div style="text-align:center">
-											<img style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:200px;max-width:200px" src="yue.jpg"
-											 class="img-responsive img-rounded">
+											<img
+												style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:200px;max-width:200px"
+												src="yue.jpg" class="img-responsive img-rounded">
 
-											<div class="description" style="border-radius: 10px">
+											<div class="description" style="border-radius: 10px;margin-top: 5px">
 												<a href="../people/gaoyue_index.html">
-													<h4>Yue Gao</h4>
+													<h4>高 跃</h4>
 												</a>
 												<p class="clean">
-													Ph.D., Associate Professor
-													School of Software, Tsinghua University
+													长聘副教授, 博士生导师<br />
+													清华大学, 软件学院
+												</p>
+											</div>
+										</div>
+										<br />
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="showroom-controls">
+									<div class="links">博士后</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4 team-member">
+										<div style="text-align:center">
+											<img
+												style="margin-left:auto;margin-right:auto;width:auto;height:auto;max-height:200px;max-width:200px"
+												src="xinglong.png" class="img-responsive img-rounded">
+
+											<div class="description" style="border-radius: 10px;margin-top: 5px;">
+												<!-- <a href="#"> -->
+													<h4>刘星龙</h4>
+												<!-- </a> -->
+												<p class="clean">
+													清华-商汤<br/>
+													联合培养
+
 												</p>
 											</div>
 										</div>
@@ -210,28 +257,64 @@
 
 
 						<div class="showroom-controls">
-							<div class="links">Research Assistant</div>
+							<div class="links">研究助理</div>
 						</div>
 						<div class="row">
 
+
 							<div class="col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="margin-left:auto;margin-right:auto;height:150px;width:auto" src="haoxuan.jpg" class="img-responsive img-rounded">
-									<div class="description" style="border-radius: 10px">
+									<img style="margin-left:auto;margin-right:auto;height:150px;width:auto" src="rongguang.jpg"
+										class="img-responsive img-rounded">
+									<div class="description"
+										style="border-radius: 10px;margin-right: 10px;margin-left: 10px;margin-top: 5px;">
+
+										<!-- <a href="#"> -->
+											<b>王荣广</b>
+										<!-- </a> -->
+									</div>
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="margin-left:auto;margin-right:auto;height:150px;width:auto" src="wangyan.jpg"
+										class="img-responsive img-rounded">
+									<div class="description"
+										style="border-radius: 10px;margin-right: 10px;margin-left: 10px;margin-top: 5px;">
+
+										<!-- <a href="#"> -->
+											<b>王焱</b>
+										<!-- </a> -->
+									</div>
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="margin-left:auto;margin-right:auto;height:150px;width:auto" src="haoxuan.jpg"
+										class="img-responsive img-rounded">
+									<div class="description"
+										style="border-radius: 10px;margin-right: 10px;margin-left: 10px;margin-top: 5px;">
 
 										<a href="Haoxuan You.html">
-											<b>Haoxuan You</b>
+											<b>有昊轩</b>
 										</a>
 									</div>
 								</div>
 								<br />
 							</div>
+
 						</div>
 
 						<br />
 
 						<div class="showroom-controls">
-							<div class="links">Students</div>
+							<div class="links">研究生</div>
 						</div>
 
 
@@ -241,26 +324,14 @@
 
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="wangnan.png" class="img-responsive img-rounded">
-
-									
-										<b>Nan Wang</b>
-									
-
-									<br /> 2016 Ph.D.
-								</div>
-								<br />
-							</div>
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yubo.jpg" class="img-responsive img-rounded">
-									
-										<b>Yubo Zhang</b>
-									
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="wangnan.png"
+										class="img-responsive img-rounded">
 
 
-									<br /> 2017 Ph.D.
+									<b>王楠</b>
+
+
+									<br /> 2016 博士生
 								</div>
 								<br />
 							</div>
@@ -268,14 +339,79 @@
 
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="ruozhou.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Ruozhou Liang</b>
-									
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="haoyi.jpg"
+										class="img-responsive img-rounded">
 
 
-									<br /> 2017 Ph.D.
+									<b>樊好义</b>
+
+									<br />2017 博士生
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="ruozhou.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>梁若舟</b>
+
+
+
+									<br /> 2017 博士生
+								</div>
+								<br />
+							</div>
+
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="zilin.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>王梓霖</b>
+
+									<br />2017 博士生
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yubo.jpg"
+										class="img-responsive img-rounded">
+
+									<b>张宇博</b>
+
+
+
+									<br /> 2017 博士生
+								</div>
+								<br />
+							</div>
+
+
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="xuyang.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>徐阳</b>
+
+
+
+									<br /> 2018 博士生
 								</div>
 								<br />
 							</div>
@@ -284,341 +420,211 @@
 
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="zizhao.jpg" class="img-responsive img-rounded">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="junjie.jpg"
+										class="img-responsive img-rounded">
 
-									
-										<b>Zizhao Zhang</b>
-									
+									<!-- <a href="Junjie Zhu.html"> -->
+										<b>朱俊杰</b>
+									<!-- </a> -->
 
 
-									<br /> 2018 Ph.D.
+									<br /> 2018 博士生
 								</div>
 								<br />
 							</div>
 
-							
-							
-							
+
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-										<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="xuyang.jpg" class="img-responsive img-rounded">
-										
-										
-										<b>Yang Xu</b>
-										
-										
-										
-										<br /> 2018 Ph.D.
-									</div>
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="zizhao.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>张子昭</b>
+
+
+
+									<br /> 2018 博士生
+								</div>
+								<br />
+							</div>
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="puti.jpg"
+										class="img-responsive img-rounded">
+
+									<b>阎菩提</b>
+
+
+
+									<br /> 2019 博士生
+								</div>
+								<br />
+							</div>
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="baodi.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>包迪</b>
+
+
+
+									<br /> 2017 硕士生
+								</div>
+								<br />
+							</div>
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="jianwen.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>蒋建文</b>
+
+
+
+									<br /> 2017 硕士生
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="linhang.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>林航</b>
+
+
+
+									<br /> 2017 硕士生
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="linyi.JPG"
+										class="img-responsive img-rounded">
+
+
+									<b>林翊</b>
+
+									<br />2017 硕士生
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="chaoyang.png"
+										class="img-responsive img-rounded">
+
+
+									<b>夏朝阳</b>
+
+									<br />2017 硕士生
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="cuihao.jpg"
+										class="img-responsive img-rounded">
+
+									<b>崔浩</b>
+
+									<br />2018 硕士生
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="ziqiang.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>陈自强</b>
+
+									<br /> 2018 硕士生
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yifan.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>丰一帆</b>
+
+									<br />2018 硕士生
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="gongbiao.jpg"
+										class="img-responsive img-rounded">
+
+									<b>龚镖</b>
+
+									<br />2018 硕士生
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="zhengyue.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>黄正跃</b>
+
 									<br />
-								</div>
-								
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="junjie.jpg" class="img-responsive img-rounded">
-
-									<a href="Junjie Zhu_files/junjie.pdf">
-										<b>Junjie Zhu</b>
-									</a>
-									
-
-
-									<br /> 2018 Ph.D.
-								</div>
-								<br />
-							</div>
-
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="zilin.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Zilin Wang</b>
-									
-									<br />Ph.D.
-								</div>
-								<br />
-							</div>
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="haoyi.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Haoyi Fan</b>
-									
-									<br />Ph.D.
-								</div>
-								<br />
-							</div>
-
-
-							
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="shuyi.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Shuyi Ji</b>
-									
-
-
-									<br />Undergraduate
+									2018 硕士生
 								</div>
 								<br />
 							</div>
 
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="siqi.jpg" class="img-responsive img-rounded">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="haojie.jpg"
+										class="img-responsive img-rounded">
 
-									
-										<b>Siqi Li</b>
-									
-									<br />Undergraduate
+									<b>林浩杰</b>
+
+									<br /> 2018 硕士生
 								</div>
 								<br />
 							</div>
 
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="xuancheng.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Xuancheng Zhang</b>
-									
-									<br />Undergraduate
-								</div>
-								<br />
-							</div>
-
-							
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="wangyan.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Yan Wang</b>
-									
-									<br />Master
-								</div>
-								<br />
-							</div>		
-
-							
 
 
 						</div>
-
-
-						<div class="showroom-controls">
-							<div class="links"></div>
-						</div>
-
-						<div class="row">
-
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="jianwen.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Jianwen Jiang</b>
-									
-
-
-									<br /> 2017 Master
-								</div>
-								<br />
-							</div>
-
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="baodi.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Di Bao</b>
-									
-
-
-									<br /> 2017 Master
-								</div>
-								<br />
-							</div>
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="linhang.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Hang Lin</b>
-									
-
-
-									<br /> 2017 Master
-								</div>
-								<br />
-							</div>
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="linyi.JPG" class="img-responsive img-rounded">
-
-									
-										<b>Yi Lin</b>
-									
-									<br />2017 Master
-								</div>
-								<br />
-							</div>
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="haojie.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Haojie Lin</b>
-									
-
-
-									<br /> 2018 Master
-								</div>
-								<br />
-							</div>
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="ziqiang.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Ziqiang Chen</b>
-									
-
-
-									<br /> 2018 Master
-								</div>
-								<br />
-							</div>
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="zhengyue.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Zhengyue Huang</b>
-									
-									<br />
-									2018 Master
-								</div>
-								<br />
-							</div>
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-										<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yifan.jpg" class="img-responsive img-rounded">
-										
-										
-										<b>Yifan Feng</b>
-										
-										<br />2018 Master
-								</div>
-								<br />
-							</div>
-								
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="gongbiao.jpg" class="img-responsive img-rounded">
-									
-										<b>Biao Gong</b>
-									
-									<br />2018 Master
-								</div>
-								<br />
-							</div>
-
-							
-						</div>
-
-						<div class="row">							
-							
-								
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yutong.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Yutong Feng</b>
-									
-									<br />Undergraduate
-								</div>
-								<br />
-							</div>
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yuxuan.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Yuxuan Wei</b>
-									
-									<br />Undergraduate
-								</div>
-								<br />
-							</div>
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="baijunjie.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Junjie Bai</b>
-									
-									<br />Undergraduate
-								</div>
-								<br />
-							</div>
-
-
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="benyuan.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Benyuan Lu</b>
-									
-									<br />Undergraduate
-								</div>
-								<br />
-							</div>
-							
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yufeng.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Yufeng Chen</b>
-									
-									<br />Undergraduate
-								</div>
-								<br />
-							</div>		
-						
-
-						</div>
-
 
 
 
@@ -626,257 +632,418 @@
 
 
 
+
+
 						<div class="showroom-controls">
-							<div class="links"></div>
+							<div class="links">2015级本科生</div>
 						</div>
 
 						<div class="row">
 
-							<!-- <div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="shuyi.jpg" class="img-responsive img-rounded">
 
-									
-										<b>Shuyi Ji</b>
-									
-
-
-									<br /> 2015
-									<br />Undergraduate
-								</div>
-								<br />
-							</div> -->
-
-
-
-							<!-- <div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yutong.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Yutong Feng</b>
-									
-									<br /> 2015
-									<br />Undergraduate
-								</div>
-								<br />
-							</div> -->
-							<!-- <div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yuxuan.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Yuxuan Wei</b>
-									
-									<br />2015
-									<br />Undergraduate
-								</div>
-								<br />
-							</div> -->
-							
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yangmin.jpg" class="img-responsive img-rounded">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="baijunjie.jpg"
+										class="img-responsive img-rounded">
 
-									
-										<b>Min Yang</b>
-									
-									<br />2015
-									<br />Undergraduate
+
+									<b>白俊杰</b>
+
 								</div>
 								<br />
 							</div>
 
 
-							<!-- <div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="baijunjie.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Junjie Bai</b>
-									
-									<br />2015
-									<br />Undergraduate
-								</div>
-								<br />
-							</div> -->
-
-
-<!-- 
-
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="siqi.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Siqi Li</b>
-									
-									<br />2015
-									<br />Undergraduate
-								</div>
-								<br />
-							</div> -->
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yufeng.jpg"
+										class="img-responsive img-rounded">
 
 
+									<b>陈瑜峰</b>
 
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="sichao.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Sichao Shen</b>
-									
-									<br />2015
-									<br />Undergraduate
 								</div>
 								<br />
 							</div>
 
+
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="zhehui.jpg" class="img-responsive img-rounded">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yutong.jpg"
+										class="img-responsive img-rounded">
 
-									
-										<b>Zhehui Zhao</b>
-									
-									<br /> 2016 
-									<br />Undergraduate
+
+									<b>冯玉彤</b>
+
 								</div>
 								<br />
 							</div>
 
+
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="jiani.jpg" class="img-responsive img-rounded">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="shuyi.png"
+										class="img-responsive img-rounded">
 
-									
-										<b>Jiani Wang</b>
-									
-									<br /> 2016 
-									<br />Undergraduate
-								</div>
-								<br />
-							</div>
-							
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="dingzheng.jpg" class="img-responsive img-rounded">
 
-									
-										<b>Zheng Ding</b>
-									
-									<br />2016 
-									<br />Undergraduate
-								</div>
-								<br />
-							</div>
+									<b>吉书仪</b>
 
-							<div class="col-md-2 col-sm-3 team-member">
-									<div style="text-align:center">
-										<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="qintian.jpg" class="img-responsive img-rounded">
-	
-										
-											<b>Qintian Li</b>
-										
-										<br />2016 
-										<br />Undergraduate
-									</div>
-									<br />
-								</div>							
-							
-							<div class="col-md-2 col-sm-3 team-member">
-								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="xinqi.jpg" class="img-responsive img-rounded">
-
-									
-										<b>Xinqi Jin</b>
-									
-									<br /> 2017 
-									<br />Undergraduate
 								</div>
 								<br />
 							</div>
 
 
 
-
-
-							<!-- <div class="co2-sm-3 team-member">
-								<div style="text-align:left">
-									<img style="height:160px;width:120px" src="dehong.jpg" class="img-responsive img-rounded">
-
-									
-
-										<b>Dehong Xu</b>
-									
-									<br />2015
-									<br />Undergraduate
-								</div>
-								<br />
-							</div> -->
-
-
-
-
-
-
-
 							<div class="col-md-2 col-sm-3 team-member">
 								<div style="text-align:center">
-									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="jingzhi.jpg" class="img-responsive img-rounded">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="benyuan.jpg"
+										class="img-responsive img-rounded">
 
-									
-										<b>Jingzhi Shao</b>
-									
-									<br />2017 
-									<br />Undergraduate
+
+									<b>陆犇圆</b>
+
 								</div>
 								<br />
 							</div>
 
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="siqi.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>李思奇</b>
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yuxuan.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>魏宇轩</b>
+
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yangmin.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>杨敏</b>
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="sichao.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>沈思超</b>
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="xuancheng.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>张轩诚</b>
+
+								</div>
+								<br />
+							</div>
 
 
 
 						</div>
+
+						<div class="showroom-controls">
+							<div class="links">2016级本科生</div>
+						</div>
+
+						<div class="row">
+
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="jialiang.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>程嘉梁</b>
+
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="runyu.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>丁润语</b>
+
+
+								</div>
+								<br />
+							</div>
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="dingzheng.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>丁郑</b>
+
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="qintian.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>李沁恬</b>
+
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="renjie.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>李仁杰</b>
+
+
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="shilong.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>刘世隆</b>
+
+
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="jiani.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>王佳妮</b>
+
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="zhehui.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>赵哲晖</b>
+
+
+								</div>
+								<br />
+							</div>
+
+
+						</div>
+
+
+
+						<div class="showroom-controls">
+							<div class="links">2017级本科生</div>
+						</div>
+
+						<div class="row">
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yezhen.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>从业臻</b>
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="xinqi.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>金昕祺</b>
+
+
+								</div>
+								<br />
+							</div>
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="siyu.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>黎思宇</b>
+
+								</div>
+								<br />
+							</div>
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="xuxin.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>刘旭鑫</b>
+
+								</div>
+								<br />
+							</div>
+
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="jingzhi.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>邵璟之</b>
+
+								</div>
+								<br />
+							</div>
+
+
+						</div>
+
+
+						<div class="showroom-controls">
+							<div class="links">2018级本科生</div>
+						</div>
+
+						<div class="row">
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yuxiao.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>王雨潇</b>
+
+								</div>
+								<br />
+							</div>
+
+
+
+							<div class="col-md-2 col-sm-3 team-member">
+								<div style="text-align:center">
+									<img style="height:140px;width:105px;margin-left:auto;margin-right:auto" src="yining.jpg"
+										class="img-responsive img-rounded">
+
+
+									<b>赵乙宁</b>
+
+								</div>
+								<br />
+							</div>
+
+						</div>
+
+
+
 
 						<br />
 
 
 
 						<div class="showroom-controls">
-							<div class="links">Alumni</div>
+							<div class="links">毕业生</div>
 						</div>
 
-						<div class="col-sm-5">
+						<!-- <div class="col-sm-5">
 
 							Wenhui Guo</a>,
-							<i>2013Undergraduate</i>
+							<i>2013 本科生</i>
 						</div>
 
 						<div class="col-sm-7">
 							<br />
-						</div>
+						</div> -->
 
 
-						<div class="col-sm-5">
+						<div class="col-sm-3">
 
-							Zhilin Cao</a>,
-							<i>2014 - 2018Undergraduate</i>
-						</div>
-
-						<div class="col-sm-7">
-							Now CMU Master.
-						</div>
-
-
-						<div class="col-sm-5">
-
-							Hengguang Zhou</a>,
-							<i>Undergraduate</i>
+							曹智林 (2016 - 2018)
 						</div>
 
 						<div class="col-sm-7">
-							Toronto University.
+							现就读于卡内基·梅隆大学.
+						</div>
+
+						<br>
+
+						<div class="col-sm-3">
+
+							周恒光 (2018 - 2018)
+						</div>
+
+						<div class="col-sm-7">
+							现就读于多伦多大学.
 						</div>
 
 
@@ -908,7 +1075,7 @@
 			<div class="row footer">
 
 				<div class="col-sm-3">
-					<h4>THU - Yue's Group</h4>
+					<h4>iMoon: Intelligent Media and Cognition Lab</h4>
 					School of Software
 					<br> Tsinghua, Beijing 100084
 					<br>
@@ -984,6 +1151,7 @@
 	<script>
 		$('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
 	</script>
+
 
 
 

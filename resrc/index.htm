@@ -9,14 +9,22 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Research - THU - Yue's Group </title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>iMoon-Lab: Research</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="../static/carousel.css" rel="stylesheet">
 
 
 
-	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="../static/css/vendor/bootstrap/bootstrap.css">
 
 	<!-- Glyphicons -->
 	<link rel="stylesheet" href="../static/css/vendor/glyphicons/glyphicons.css">
@@ -27,7 +35,7 @@
 	<link href="../../fonts.googleapis.com/css-family=Open+Sans-400,700,600.css" rel='stylesheet' type='text/css'>
 
 	<!--resrc transfo -->
-	<link href="static/trans.css" rel='stylesheet' type='text/css'>
+	<link href="../static/trans.css" rel='stylesheet' type='text/css'>
 
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -56,7 +64,7 @@
     <![endif]-->
 
 	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="static/js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="../static/js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
 	<!-- jQuery with jQuery Easing, and jQuery Transit JS -->
 
 	<!-- LayerSlider from Kreatura Media with Transitions -->
@@ -76,7 +84,8 @@
 	<script src="../../cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 
 	<!-- highlighting for tables -->
-	<script src="../../cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+	<script
+		src="../../cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
 	<script src="../../bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
 
 	<!-- fancy select boxes -->
@@ -96,42 +105,62 @@
 </head>
 
 <body>
-
 	<!-- navigation -->
 	<header>
-		<nav class="navbar navbar-default grove-navbar">
-			<div class="container">
+		<nav class="navbar navbar-default grove-navbar navbar-fixed-top" id="imoonbignav">
+			<div class="container" id="imoonmidnav">
 				<div class="navbar-header">
 					<a href="#" class="grove-toggle collapsed" data-toggle="collapse" data-target=".grove-nav">
 						<i class="glyphicons show_lines"></i>
 					</a>
-					<img class="navbar-brand navbar-left hidden-xs" src="../static/img/logos/nlp-logo-small.png" alt="">
+					<img class="navbar-brand navbar-left hidden-xs" src="../static/img/logos/nlp-logo-small.png" alt=""
+						id="imoonlogo">
 					<a class="navbar-brand navbar-left" href="../index.htm">
-						<h3 class="hidden-xs">Tsinghua University - Yue's Group</h3>
-						<h3 class="hidden-sm hidden-md hidden-lg hidden-xl">THU - Yue's Group</h3>
+						<h3 class="hidden-xs" id="imoontitle">智能媒体与认知实验室<p>
+								iMoon: Intelligent
+								Media and Cognition Lab</p>
+						</h3>
+						<h3 class="hidden-sm hidden-md hidden-lg hidden-xl" style="color: white">iMoon-Lab</h3>
 					</a>
 				</div>
 
-				<div class="navbar-collapse grove-nav collapse">
-					<ul class="nav navbar-nav">
+				<div class="navbar-collapse grove-nav collapse" style="position: relative">
+					<ul class="nav navbar-nav" id="imoonnav">
+
+						<div style="position:absolute;top:5px;left:10px;border:0px solid rgb(255, 255, 255);">
+							<a href="../index.htm">
+								<div style="width: 400px;height:65px"></div>
+							</a>
+						</div>
+            <div id="language">
+							<a id='drump' href="../../cn_tsinghua/resrc/index.htm"><b>中 / </b></a><a id='drump' href="#"><b>En</b></a>
+						</div>
+
 						<li>
-							<a href="../index.htm">home</a>
+							<a href="../index.htm">主页</a>
 						</li>
 						<li>
-							<a href="../people/index.htm">people</a>
+							<a href="../people/index.htm">团队</a>
 						</li>
 						<li>
-							<a href="../resrc/index">research</a>
+							<a href="../resrc/index.htm">研究方向</a>
 						</li>
 						<li>
-							<a href="../pubs/index.htm">publications</a>
+							<a href="../pubs/index.htm">论文</a>
 						</li>
 						<li>
-							<a href="../blog/index.htm">news</a>
+							<a href="../blog/index.htm">新闻</a>
 						</li>
 						<li>
-							<a style="color:rgb(130, 49, 142)" href="../../cn_tsinghua/resrc/index.htm"><b>中文</b></a>
-						</li> 						
+							<a href="#">生活</a>
+						</li>
+						<li class="dropdown">
+							<a href="#">更多信息</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">MICCAI19 Tutorial</a></li>
+								<li><a href="#">MICCAI19 挑战赛</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -141,128 +170,198 @@
 
 
 
-	<div class="widewrapper">
+
+
+	<div class="widewrapper ">
 		<div id="body_content">
 
-
+			<!-- 
 			<div class="widewrapper pagetitle">
 				<div class="container">
-					<h1>Research</h1>
+					<h1>研究方向</h1>
 				</div>
-			</div>
+			</div> -->
+
+
+			<!-- Marketing messaging and featurettes
+    ================================================== -->
+			<!-- Wrap the rest of the page in another container to center all the content. -->
+
+			<div class="container marketing">
 
 
 
 
+				<!-- START THE FEATURETTES -->
+
+				<!-- <h1 align='left' style="margin-bottom: 10px;margin-top: 50px;">研究方向</h1>
+
+        <hr class="featurette-divider" style="margin-top: 0px;margin-bottom: 70px;"> -->
 
 
-			<div class="container content">
-				<div class="row">
-					<section class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<h2>Main Research Fields Introduction</h2>
-
-						<p>
-							Main Introduction shown in the team card.
-						</p>
-
-
-					</section>
-				</div>
-			</div>
-
-			<div id="cont" class="whole">
-
-
-				<div onmouseover="trans('container','inner')" id="container">
-					<div id="inner">
-						<a href="cv.html"><img src="1.gif" style="width: 18em;height: 18em;margin: 6px;">
-							<!-- <b>PVNet</b> --></a>
-					</div>
-					Computer Vision
-				</div>
-
-				<div onmouseover="trans('container1','inner1')" id="container1">
-					<div id="inner1">
-						<a href="mia.html"><img src="2.png" style="width: 18em;height: 18em;margin: 6px;">
-						</a>
-					</div>
-					Medical Image Analysis
-				</div>
-				<div onmouseover="trans('container2','inner2')" id="container2">
-					<div id="inner2">
-						<a href="ml.html"><img src="3.gif" style="width: 18em;height: 18em;margin: 6px;">
-							<!-- <b>EMD Metric Learning</b> --></a>
-					</div>
-					Machine Learning
-				</div>
-				<div onmouseover="trans('container3','inner3')" id="container3">
-					<div id="inner3">
-						<a href=""><img src="4.gif" style="width: 18em;height: 18em;margin: 6px;">
-						</a>
-					</div>
-					Industrial Internet Security
-				</div>
-
-			</div>
-
-			<div class="whole">
-				<div class="container content">
-
-					<div class="row">
-						<section class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-							<h4>1. Computer Vision <a style="color:red" href="cv.html">[Detail]</a></h4>
-
-
-							<p>
-								How to observe and understand the world is one essential task in computer vision. Our team works on finding
-								solutions to 3D visual understanding, especially on 3D object recognition and retrieval. Current projects
-								include multi-view object recognition for self-driving vehicle, 3D multi-modal (point cloud, multi-view,
-								volumetric and mesh) data fusion, high-speed visual reconstruction and visual detection.
-								<!-- <a href="cv.html">[detail]</a> -->
+				<div class="row featurette" style="margin-top:190px;">
+					<div class="col-md-7" style="padding-right: 50px;">
+						<div class="row" style="margin-left: 0px;margin-top: 0px;">
+							<h2 class="featurette-heading" style="margin-top: 0px;margin-bottom: 20px;"><a href="../resrc/cv.html"
+									style="color:rgb(100, 100, 100);text-decoration:none;">立体视觉</a> <span class="text-muted"><a
+										href="../resrc/cv.html" style="color:rgb(119, 119, 119);text-decoration:none;">3D Vision</a></span>
+							</h2>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<p class="lead" style="margin-top: 30px;">
+									<i></i> 立体数据获取与增强<br>
+									<i></i> 立体视觉表示<br>
+									<i></i> 立体视觉对象检索<br>
+								</p>
+							</div>
+							<div class="col-md-6" style="padding-left: 0px;padding-right: 0px;">
+								<a href="../resrc/cv.html">
+									<img class="featurette-image img-responsive center-block" src="../static/img/cv.png"
+										alt="Generic placeholder image"></a>
+							</div>
+						</div>
+						<div class="row" style="margin-left: 0px;">
+							<!-- <p class="lead">代表论文：</p> -->
+							<p class="iii"
+								style="font-size: 15px;background: rgba(235, 232, 232, 0.548);border-radius: 10px;margin-bottom: 0px;padding-top: 5px;padding-bottom: 5px;padding-right: 5px;border-left-width: 5px;padding-left: 10px;margin-top: 15px;">
+								<b>[CVPR 2018]</b> GVCNN: Group-View Convolutional Neural Networks for 3D Shape Recognition.
+								<a
+									href="http://gaoyue.org/paper/Feng_GVCNN_Group-View_Convolutional_CVPR_2018_paper.pdf">[paper]</a><br>
+								<b>[MM 2018]</b> PVNet: A Joint Convolutional Network of Point Cloud and Multi-View for 3D Shape
+								Recognition. <a href="http://gaoyue.org/paper/PVNet.pdf">[paper]</a><br>
+								<b>[TIP 2018]</b> Inductive Multi-Hypergraph Learning for View-Based 3D Object Classification. <a
+									href="http://gaoyue.org/paper/Inductive%20Multi-Hypergraph%20Learning%20and%20Its%20Application%20on%20View-Based%203D%20Object%20Classification.pdf">[paper]</a><br>
+								<b>[AAAI 2019]</b> MeshNet: Mesh Neural Network for 3D Shape
+								Representation. <a href="http://gaoyue.org/paper/MeshNet.pdf">[paper]</a> <a
+									href="https://github.com/Yue-Group">[code]</a><br>
 							</p>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<a href="../resrc/cv.html">
+							<img class="featurette-image img-responsive center-block" src="../resrc/1.gif"
+								alt="Generic placeholder image" style="width:500px;height:auto"></a>
+					</div>
+				</div>
 
-							<h4>2. Medical Image Analysis <a style="color:red" href="mia.html">[Detail]</a></h4>
+				<hr class="featurette-divider" style="margin-top: 70px;margin-bottom: 70px;">
 
 
-							<p>
-								This part of work mainly focuses on medical image processing and computer-aided diagnosis. In medical image
-								processing, we design effective and efficient deep learning methods for brain image segmentation and
-								registration. Our research designs new methods for diagnosis of brain degenerated diseases, such as Alzheimer’s
-								Disease, and cardiovascular disease, supported by National Key R&D Program of China.
-								<!-- <a href="mia.html">[detail]</a> -->
+				<div class="row featurette">
+					<div class="col-md-7 col-md-push-5" style="padding-right: 30px;padding-left: 30px;">
+						<div class="row" style="margin-left: 0px;margin-top: 0px;">
+							<!-- <h2 class="featurette-heading" style="margin-top: 0px;margin-bottom: 20px;">复杂网络 <span
+                  class="text-muted">Complex Network</span>
+              </h2> -->
+							<h2 class="featurette-heading" style="margin-top: 0px;margin-bottom: 20px;"><a href="../resrc/ml.html"
+									style="color:rgb(100, 100, 100);text-decoration:none;">复杂网络</a> <span class="text-muted"><a
+										href="../resrc/ml.html" style="color:rgb(119, 119, 119);text-decoration:none;">Complex
+										Network</a></span>
+							</h2>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<p class="lead" style="margin-top: 30px;">
+									<i></i> 超图结构学习模型<br>
+									<i></i> 超图神经网络模型<br>
+									<i></i> 网络安全态势感知<br>
+								</p>
+							</div>
+							<div class="col-md-6" style="padding-left: 0px;padding-right: 0px;">
+								<a href="../resrc/ml.html">
+									<img class="featurette-image img-responsive center-block" src="../static/img/ml.png"
+										alt="Generic placeholder image"></a>
+							</div>
+						</div>
+						<div class="row" style="margin-left: 0px;">
+							<!-- <p class="lead">代表论文：</p> -->
+							<p class="iii"
+								style="font-size: 15px;background: rgba(235, 232, 232, 0.548);border-radius: 10px;margin-bottom: 0px;padding-top: 5px;padding-bottom: 5px;padding-right: 5px;border-left-width: 5px;padding-left: 10px;margin-top: 15px;">
+								<b>[IJCAI 2018]</b> Dynamic Hypergraph Structure Learning.
+								<a href="http://gaoyue.org/paper/Dynamic%20Hypergraph%20Structure%20Learning.pdf">[paper]</a><br>
+								<b>[AAAI 2019]</b> Hypergraph Neural Networks.
+								<a href="http://gaoyue.org/paper/HGNN.pdf">[paper]</a> <a
+									href="https://github.com/Yue-Group">[code]</a><br>
+								<b>[IJCAI 2019]</b> Dynamic Hypergraph Neural Networks.
+								<a>[paper]</a><br>
+								<b>[TIE 2019]</b> Exploring High-Order Correlations for Industry Anomaly Detection.
+								<a href="https://ieeexplore.ieee.org/document/8684782">[paper]</a><br>
 							</p>
-							<h4>3. Machine Learning <a style="color:red" href="ml.html">[Detail]</a></h4>
-
-
-							<p>
-								Complex data correlation modelling and representation plays an important role in many applications, such as
-								social media analysis, data classification and medical diagnosis. Here, we focus on graph/hypergraph based
-								learning, hypergraph neural networks, multi-modal data fusion, metric learning and cost-sensitive learning
-								methods, and their applications on visual classification, software defect prediction, and social media data
-								filtering and recommendation.
-								<!-- <a href="ml.html">[detail]</a> -->
-							</p>
-							<h4>4. Industrial Internet Security</h4>
-
-
-							<p>
-								With the development of Industrial Internet and Industrial 4.0, industrial control area attaches more and more
-								attentions from researchers. Nowadays, big data, cloud computing and Internet of things have been the kernel
-								techniques for the national critical infrastructures. In this part, we focus on complex relationship
-								description, anomaly detection and model adaptation.
-							</p>
-
-						</section>
+						</div>
+					</div>
+					<div class="col-md-5 col-md-pull-7">
+						<a href="../resrc/ml.html">
+							<img class="featurette-image img-responsive center-block" src="../resrc/2.gif"
+								alt="Generic placeholder image" style="width:380px;height:auto;"></a>
 					</div>
 				</div>
 
 
-			</div>
+
+
+				<hr class="featurette-divider" style="margin-top: 50px;margin-bottom: 70px;">
 
 
 
+				<div class="row featurette" style="margin-bottom:100px">
+					<div class="col-md-7" style="padding-right: 50px;">
+						<div class="row" style="margin-left: 0px;margin-top: 0px;">
+							<!-- <h2 class="featurette-heading" style="margin-top: 0px;margin-bottom: 20px;">脑科学 <span
+                  class="text-muted">Brain Science</span>
+              </h2> -->
+							<h2 class="featurette-heading" style="margin-top: 0px;margin-bottom: 20px;"><a href="../resrc/mia.html"
+									style="color:rgb(100, 100, 100);text-decoration:none;">脑科学</a> <span class="text-muted"><a
+										href="../resrc/mia.html" style="color:rgb(119, 119, 119);text-decoration:none;">Brain
+										Science</a></span>
+							</h2>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<p class="lead" style="margin-top: 30px;">
+									<i></i> 脑图像分割<br>
+									<i></i> 脑网络建模<br>
+									<i></i> 情感计算<br>
+								</p>
+							</div>
+							<div class="col-md-6" style="padding-left: 0px;padding-right: 0px;">
+								<a href="../resrc/mia.html">
+									<img class="featurette-image img-responsive center-block" src="../static/img/mia.png"
+										alt="Generic placeholder image"></a>
+							</div>
+						</div>
+						<div class="row" style="margin-left: 0px;">
+							<!-- <p class="lead">代表论文：</p> -->
+							<p class="iii"
+								style="font-size: 15px;background: rgba(235, 232, 232, 0.548);border-radius: 10px;margin-bottom: 0px;padding-top: 5px;padding-bottom: 5px;padding-right: 5px;border-left-width: 5px;padding-left: 10px;margin-top: 15px;">
+								<b>[HBM 2016]</b> High-Order Resting-State Functional Connectivity Network for MCI Classification.
+								<a href="http://gaoyue.org/paper/MCI%20classification.pdf">[paper]</a><br>
+								<b>[MICCAI 2016]</b> Identifying Relationships in Functional and Structural Connectome Data Using a
+								Hypergraph Learning Method.
+								<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6013074/">[paper]</a><br>
+								<b>[TMI 2016]</b> Detecting Anatomical Landmarks for Fast Alzheimer's Disease Diagnosis.
+								<a
+									href="http://gaoyue.org/paper/Detecting%20Anatomical%20Landmarks%20for%20Fast%20Alzheimer's%20Disease%20Diagnosis.pdf">[paper]</a><br>
+								<b>[TMI 2018]</b> A Stacked Sparse Autoencoder-based Detector for Diagnosis of Neuromagnetic High
+								Frequency Oscillations in Epilepsy.
+								<a>[paper]</a><br>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<a href="../resrc/mia.html">
+							<img class="featurette-image img-responsive center-block" src="../resrc/3.gif"
+								alt="Generic placeholder image" style="width:500px;height:auto"></a>
+					</div>
+				</div>
 
 
+
+				<!-- /END THE FEATURETTES -->
+
+
+
+			</div><!-- /.container -->
 		</div>
 	</div>
 
@@ -272,7 +371,7 @@
 			<div class="row footer">
 
 				<div class="col-sm-3">
-					<h4>THU - Yue's Group</h4>
+					<h4>iMoon: Intelligent Media and Cognition Lab</h4>
 					School of Software
 					<br> Tsinghua, Beijing 100084
 					<br>
@@ -343,95 +442,8 @@
 
 	<script src="../static/js/vendor/bootstrap/bootstrap.min.js"></script>
 	<script src="../static/js/vendor/modernizr/modernizr.js"></script>
-
-
-	<script>
-		$('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
-	</script>
-
-	<script>
-		// if($(window).width()<=300)
-
-		function trans(idname, idnameinner) {
-			// Init
-			var container = document.getElementById(idname),
-				inner = document.getElementById(idnameinner);
-
-			// Mouse
-			var mouse = {
-				_x: 0,
-				_y: 0,
-				x: 0,
-				y: 0,
-				updatePosition: function (event) {
-					var e = event || window.event;
-					this.x = e.clientX - this._x;
-					this.y = (e.clientY - this._y) * -1;
-				},
-				setOrigin: function (e) {
-					this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-					this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
-				},
-				show: function () {
-					return "(" + this.x + ", " + this.y + ")";
-				}
-			};
-
-			// Track the mouse position relative to the center of the container.
-			mouse.setOrigin(container);
-
-			//-----------------------------------------
-
-			var counter = 0;
-			var updateRate = 10;
-			var isTimeToUpdate = function () {
-				return counter++ % updateRate === 0;
-			};
-
-			//-----------------------------------------
-
-			var onMouseEnterHandler = function (event) {
-				update(event);
-			};
-
-			var onMouseLeaveHandler = function () {
-				inner.style = "";
-			};
-
-			var onMouseMoveHandler = function (event) {
-				if (isTimeToUpdate()) {
-					update(event);
-				}
-			};
-
-			//-----------------------------------------
-
-			var update = function (event) {
-				mouse.updatePosition(event);
-				updateTransformStyle(
-					(mouse.y / inner.offsetHeight / 2).toFixed(2),
-					(mouse.x / inner.offsetWidth / 2).toFixed(2)
-				);
-			};
-
-			var updateTransformStyle = function (x, y) {
-				var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-				inner.style.transform = style;
-				inner.style.webkitTransform = style;
-				inner.style.mozTransform = style;
-				inner.style.msTransform = style;
-				inner.style.oTransform = style;
-			};
-
-			//-----------------------------------------
-
-			container.onmouseenter = onMouseEnterHandler;
-			container.onmouseleave = onMouseLeaveHandler;
-			container.onmousemove = onMouseMoveHandler;
-		}
-	</script>
-
-
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
 
 </body>
 

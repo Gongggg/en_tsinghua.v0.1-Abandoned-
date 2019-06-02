@@ -9,14 +9,22 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>News - Tsinghua University - Yue's Group</title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>iMoon-Lab: News</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="../static/carousel.css" rel="stylesheet">
 
 
 
-	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="../static/css/vendor/bootstrap/bootstrap.css">
 
 	<!-- Glyphicons -->
 	<link rel="stylesheet" href="../static/css/vendor/glyphicons/glyphicons.css">
@@ -73,7 +81,8 @@
 	<script src="../../cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 
 	<!-- highlighting for tables -->
-	<script src="../../cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+	<script
+		src="../../cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
 	<script src="../../bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
 
 	<!-- fancy select boxes -->
@@ -95,39 +104,64 @@
 
 	<!-- navigation -->
 	<header>
-		<nav class="navbar navbar-default grove-navbar">
-			<div class="container">
+		<nav class="navbar navbar-default grove-navbar  navbar-fixed-top" id="imoonbignav">
+			<div class="container" id="imoonmidnav">
 				<div class="navbar-header">
 					<a href="#" class="grove-toggle collapsed" data-toggle="collapse" data-target=".grove-nav">
 						<i class="glyphicons show_lines"></i>
 					</a>
-					<img class="navbar-brand navbar-left hidden-xs" src="../static/img/logos/nlp-logo-small.png" alt="">
+					<img class="navbar-brand navbar-left hidden-xs" src="../static/img/logos/nlp-logo-small.png" alt=""
+						id="imoonlogo">
 					<a class="navbar-brand navbar-left" href="../index.htm">
-						<h3 class="hidden-xs">Tsinghua University - Yue's Group</h3>
-						<h3 class="hidden-sm hidden-md hidden-lg hidden-xl">THU - Yue's Group</h3>
+						<h3 class="hidden-xs" id="imoontitle">智能媒体与认知实验室<p>
+								iMoon: Intelligent
+								Media and Cognition Lab</p>
+						</h3>
+						<h3 class="hidden-sm hidden-md hidden-lg hidden-xl" style="color: white">iMoon-Lab</h3>
 					</a>
 				</div>
 
-				<div class="navbar-collapse grove-nav collapse">
-					<ul class="nav navbar-nav">
+
+				<div class="navbar-collapse grove-nav collapse" style="position: relative">
+					<ul class="nav navbar-nav" id="imoonnav">
+
+
+						<div style="position:absolute;top:5px;left:10px;border:0px solid rgb(255, 255, 255);">
+							<a href="../index.htm">
+								<div style="width: 400px;height:65px"></div>
+							</a>
+						</div>
+						<div id="language">
+							<a id='drump' href="../../cn_tsinghua/blog/index.htm"><b>中 / </b></a><a id='drump' href="#"><b>En</b></a>
+						</div>
+
 						<li>
-							<a href="../index.htm">home</a>
+							<a href="../index.htm">主页</a>
 						</li>
 						<li>
-							<a href="../people/index.htm">people</a>
+							<a href="../people/index.htm">团队</a>
 						</li>
 						<li>
-							<a href="../resrc/index">research</a>
+							<a href="../resrc/index.htm">研究方向</a>
 						</li>
 						<li>
-							<a href="../pubs/index.htm">publications</a>
+							<a href="../pubs/index.htm">论文</a>
 						</li>
 						<li>
-							<a href="../blog/index.htm">news</a>
+							<a href="../blog/index.htm">新闻</a>
 						</li>
 						<li>
-							<a style="color:rgb(130, 49, 142)" href="../../cn_tsinghua/blog/index.htm"><b>中文</b></a>
-						</li>  						
+							<a href="#">生活</a>
+						</li>
+						<li class="dropdown">
+							<a href="#">更多信息</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">MICCAI19 Tutorial</a></li>
+								<li><a href="#">MICCAI19 挑战赛</a></li>
+							</ul>
+						</li>
+
+
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -137,18 +171,19 @@
 
 
 
-	<div class="widewrapper">
+	<div class="widewrapper" style="margin-top: 90px">
 		<div id="body_content">
 
 
-			<div class="widewrapper pagetitle">
-				<div class="container">
-					<h1>News</h1>
-
-
+			<!-- <div class="widewrapper pagetitle">
+				<div class="container" id="back">
+					<h1>最新资讯</h1>
 				</div>
-			</div>
-			<div class="widewrapper weak-highlight">
+			</div> -->
+
+
+
+			<div class="widewrapper">
 				<div class="container content">
 					<div id="showmarkdown" class="row">
 						<div class="col-sm-10">
@@ -187,7 +222,7 @@
 			<div class="row footer">
 
 				<div class="col-sm-3">
-					<h4>THU - Yue's Group</h4>
+					<h4>iMoon: Intelligent Media and Cognition Lab</h4>
 					School of Software
 					<br> Tsinghua, Beijing 100084
 					<br>
@@ -257,8 +292,10 @@
 		</div>
 	</footer>
 
-	<script src="../static/js/vendor/bootstrap/bootstrap.min.js" tppabs="https://nlp.stanford.edu/static/js/vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="../static/js/vendor/modernizr/modernizr.js" tppabs="https://nlp.stanford.edu/static/js/vendor/modernizr/modernizr.js"></script>
+	<script src="../static/js/vendor/bootstrap/bootstrap.min.js"
+		tppabs="https://nlp.stanford.edu/static/js/vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="../static/js/vendor/modernizr/modernizr.js"
+		tppabs="https://nlp.stanford.edu/static/js/vendor/modernizr/modernizr.js"></script>
 	<script src="../static/showdown/dist/showdown.min.js"></script>
 
 
@@ -268,6 +305,7 @@
 	</script>
 
 	<script>
+
 		function mdjump(mdurl) {
 			var mddata = "# test \n\n test \n test \n\n ## test";
 
@@ -280,6 +318,20 @@
 			var html = converter.makeHtml(mddata);
 			$("#showmarkdown").empty();
 			$("#showmarkdown")[0].innerHTML = html;
+
+			pushHistory();
+			window.addEventListener("popstate", function (e) {
+				// alert("我监听到了浏览器的返回按钮事件啦");//根据自己的需求实现自己的功能 
+				history.go(0);
+			}, false);
+			function pushHistory() {
+				var state = {
+					title: "title",
+					url: "#"
+				};
+				window.history.pushState(state, "title", "#");
+			}
+
 		}
 
 		$('document').ready(function () {
@@ -337,8 +389,25 @@
 		});
 
 	</script>
-
-
+	<!-- 
+	<script>
+		$(function () {
+			console.log(inmarkdown);
+			if (inmarkdown == true) {
+				pushHistory();
+				window.addEventListener("popstate", function (e) {
+					alert("我监听到了浏览器的返回按钮事件啦");//根据自己的需求实现自己的功能 
+				}, false);
+				function pushHistory() {
+					var state = {
+						title: "title",
+						url: "#"
+					};
+					window.history.pushState(state, "title", "#");
+				}
+			}
+		}); 
+	</script> -->
 
 </body>
 
